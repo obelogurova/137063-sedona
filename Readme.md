@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Белогурова](https://up.htmlacademy.ru/htmlcss/15/user/137063).
-* Наставник: [Ирина Малиновская].(https://up.htmlacademy.ru/htmlcss/15/user/29644)
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/15/user/29644).
 
 ---
 
