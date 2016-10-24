@@ -6,12 +6,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a><img src="img/index-logo.png" width="100" height="50" alt="Sedona"></a> <!--лого будет абсолютно спозиционировано-->
-      </div>
-        <nav class="container main-navigation">
+        <nav class="main-navigation">
+          <div class="logo">
+            <a href="#"><img src="img/index-logo.png" width="100" height="50" alt="Sedona"></a> <!--лого будет абсолютно спозиционировано-->
+          </div>
           <ul>
-            <li>
+            <li class="index-logo">
               <a href="#">Информация</a>
             </li>
             <li>
@@ -26,7 +26,7 @@
           </ul>
         </nav>
     </header>
-    <main>
+    <main class="content">
       <div class="background-image">
       </div>
       <div class="container">
@@ -36,63 +36,63 @@
         </div>
       </div>
       <div class="column-1">
-        <div class="feauters-item">
+        <section class="feauters-item">
           <b class="feauters-name">Настоящий городок</b>
           <p>- №1 -</p>
           <p>Седона - не аттракцион для туристов, там живет своя жизнь</p>
-        </div>
-        <div class="feauters-item with-logo">
+        </section>
+        <section class="feauters-item with-logo">
           <div class="feauters-item-icon">
           </div>
           <b>Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </div>
+        </section>
         <div class="feauters-item content-photo"> <!--изображение будет абсолютно спозиционировано-->
           <img src="#" alt="Sedona">
         </div>
-        <div class="feauters-item">
+        <section class="feauters-item">
           <b class="feauters-name">Небольшая площадь</b>
           <p>- №3 -</p>
           <p>Все достопримечательности находятся очень близко</p>
-        </div>
+        </section>
       </div>
       <div class="column-2">
         <div class="feauters-item content-photo"> <!--изображение будет абсолютно спозиционировано-->
           <img src="#" alt="Sedona">
         </div>
-        <div class="feauters-item with-logo">
+        <section class="feauters-item with-logo">
           <div class="feauters-item-icon">
           </div>
           <b>Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
+        </section>
         <div class="feauters-item"><!--блок под место для абсолютно спозиционированного изображения-->
         </div>
-        <div class="feauters-item">
+        <section class="feauters-item">
           <b class="feauters-name">Красивая дорога</b>
           <p>- №4 -</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
+        </section>
       </div>
       <div class="column-3">
         <div class="feauters-item"><!--блок под место для абсолютно спозиционированного изображения-->
         </div>
-        <div class="feauters-item with-logo">
+        <section class="feauters-item with-logo">
           <div class="feauters-item-icon">
           </div>
           <b>Сувениры</b>
           <p>Не только китайского, но и местного производства!</p>
-        </div>
-        <div class="feauters-item">
+        </section>
+        <section class="feauters-item">
           <b class="feauters-name">Там есть мост дьявола</b>
           <p>- №2 -</p>
           <p>Да, по нему вы можете пройти! Если, конечно, вы осмелитесь!</p>
-        </div>
-        <div class="feauters-item">
+        </section>
+        <section class="feauters-item">
           <b class="feauters-name">Мало туристов</b>
           <p>- №5 -</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>       
+        </section>       
       </div>
       <div class="container">
         <div class="index-content">
@@ -105,44 +105,44 @@
       <div class="form">
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-title">Поиск гостиницы в Седоне</p>
-          <fieldset class="form-element">
-            <label class="input-date">Дата заезда:
-              <input type="date" name="date-arrival">
-            </label> 
-            <button class="btn" type="submit"></button>
-          </fieldset>  
-          <fieldset class="form-element">
-            <label class="input-date">Дата отъезда: 
-              <input type="date" name="date-departure">
-            </label>
-            <button class="btn" type="submit"></button>   
-          </fieldset>
-          <fieldset class="form-element">
-            <label class="input-amount">Взрослые:
-              <input type="number" name="adults-amount">
-            </label>
-            <label class="input-amount">Дети: 
-              <input type="number" name="children-amount">
-            </label>
-          </fieldset>   
-          <a class="btn find" href="#">Найти</a>
+            <div class="form-element-1">
+              <label for="date-arrival-field">Дата заезда:</label> 
+              <div class="date-form"> <!-- будет блочно-строчным-->
+                <input type="date" name="date-arrival" id="date-arrival-field">
+                <button class="btn" type="submit"></button>
+              </div>    
+            </div>
+            <div class="form-element-2">
+              <label for="date-departure-field">Дата отъезда:</label> 
+              <div class="date-form"> <!-- будет блочно-строчным-->
+                <input type="date" name="date-departure" id="date-departure-field">
+                <button class="btn" type="submit"></button>
+              </div>    
+            </div>
+            <div class="form-element-3">
+              <label for="adults-amount-field">Взрослые: </label>
+              <input type="number" id="adults-amount-field">
+              <label for="children-amount-field">Дети: </label>
+              <input type="number" id="children-amount-field">
+            </div>   
+            <a class="btn find" href="#">Найти</a>
         </form>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-hashtag">
+        <section class="footer-hashtag">
           <p>#VISITSEDONA</p>
-        </div>
-        <div class="footer-social">
+        </section>
+        <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#"></a>
           <a class="social-btn social-btn-fb" href="#"></a>
           <a class="social-btn social-btn-ytb" href="#"></a>
-        </div>
-        <div class="footer-copyright">
+        </section>
+        <section class="footer-copyright">
           <p>WEBSITE BY:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </div>
+        </section>
       </div>
     </footer>
   </body>
