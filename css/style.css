@@ -1,0 +1,28 @@
+body {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: normal;
+    font-family: "PT Sans", "Arial";
+    }
+    
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    } 
+    
+b {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: bold;
+    }   
+    
+.feauters-item:nth-child(2n-1) b {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    } 
