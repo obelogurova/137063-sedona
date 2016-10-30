@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,7 +29,7 @@
         </nav>
       </header>
       <main>
-        <div class="content-filter">
+        <div class="content-filter clearfix">
           <form class="appointment-form" action="#" method="post">
             <fieldset class="content-filter-item">
               <legend class="content-filter-title">Инфраструктура:</legend>
@@ -64,10 +65,10 @@
             </fieldset>
           </form>
         </div>
-        <div class="sort-results">
-          <p class="sort-results-title">Найдено: <span>3</span></p>
-          <span>Сортировка:</span>
-          <ul>
+        <div class="sort-results clearfix">
+          <b class="sort-results-item title">Найдено: <span>3</span></b>
+          <span class="sort-results-item">Сортировка:</span>
+          <ul class="sort-results-item">
             <li>
               <button class="btn active" type="submit" name="by-price">По цене</button>
             </li>
@@ -78,16 +79,16 @@
               <button class="btn" type="submit" name="by-rating">По рейтингу</button>
             </li>
           </ul>
-          <div class="sort-results-how">
+          <div class="sort-results-item how">
             <button class="btn" type="submit" name="arrow-up">arrow-up</button>
             <button class="btn" type="submit" name="arrow-down">arrow-down</button>
           </div>
         </div>      
-        <div class="hotel-item">
-          <div class="hotel-photo">
+        <div class="hotels clearfix">
+          <div class="hotel-item photo">
             <img src="img/hotel-photo-1.jpg" width="135" height="90" alt="Amara Resort&amp;SPA">
           </div>
-          <div class="hotel-about">
+          <div class="hotel-item about">
             <p class="hotel-title">Amara Resort&amp;SPA</p>
             <div class="hotel-about-column">
               <p>Гостиница</p>
@@ -102,7 +103,7 @@
               </div>
             </div>    
           </div>
-          <div class="hotel-rating">
+          <div class="hotel-item rating">
             <div class="rating-stars">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
@@ -111,11 +112,11 @@
             </div>
           </div>
         </div>
-        <div class="hotel-item">
-          <div class="hotel-photo">
+        <div class="hotels">
+          <div class="hotel-item photo">
             <img src="img/hotel-photo-2.jpg" width="135" height="90" alt="Desert Quail Inn">
           </div>
-          <div class="hotel-about">
+          <div class="hotel-item about">
             <p class="hotel-title">Desert Quail Inn</p>
             <div class="hotel-about-column">
               <p>Мотель</p>
@@ -130,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-rating">
+          <div class="hotel-item rating">
             <div class="rating-stars">
               <span>&#9733;</span><span>&#9733;</span>
             </div>
@@ -139,11 +140,11 @@
             </div>
           </div>
         </div>
-        <div class="hotel-item">
-          <div class="hotel-photo">
+        <div class="hotels">
+          <div class="hotel-item photo">
             <img src="img/hotel-photo-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
-          <div class="hotel-about">
+          <div class="hotel-item about">
             <p class="hotel-title">Villas at Poco Diablo</p>
             <div class="hotel-about-column">
               <p>Апартаменты</p>
@@ -158,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-rating">
+          <div class="hotel-item rating">
             <div class="rating-stars">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
@@ -168,16 +169,16 @@
           </div>
         </div>
       </main>
-      <footer class="main-footer">
-        <div class="footer-hashtag">
-          <p>#VISITSEDONA</p>
+      <footer class="main-footer clearfix">
+        <div class="footer-block hashtag">
+          <span>#VISITSEDONA</span>
         </div>
-        <div class="footer-social">
+        <div class="footer-block social">
           <a class="social-btn social-btn-tw" href="#"></a>
           <a class="social-btn social-btn-fb" href="#"></a>
           <a class="social-btn social-btn-ytb" href="#"></a>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-block copyright">
           <p>WEBSITE BY:</p>
           <a class="btn" href="https://htmlacademy.ru">
             <img src="img/htmlacademy-logo.png" width="113" height="39" alt="htmlacademy-logo">
