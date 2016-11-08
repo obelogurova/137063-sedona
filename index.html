@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
         <div class="logo">
-          <a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Sedona"></a> <!--лого будет абсолютно спозиционировано-->
+          <a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Sedona"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -39,86 +41,83 @@
           <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>   
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <div class="feauters clearfix">
+        <div class="feauters with-photo clearfix">
           <div class="feauters-item">
             <b class="feauters-name">Настоящий городок</b>
-            <p>- №1 -</p>
-            <p>Седона - не аттракцион для туристов, там живет своя жизнь</p>
+            <p class="feauter-number">- №1 -</p>
+            <p><span>Седона - не аттракцион для туристов,</span><span>там течет своя жизнь</span></p>
           </div>
           <div class="feauters-item photo">
             <img src="img/content-photo-1.jpg" width="800" height="256" alt="Sedona photo">
           </div>
         </div>
-        <div class="feauters clearfix">
-          <div class="feauters-item with-logo">
-            <div class="feauters-item-icon">
-            </div>
-            <b>Жилье</b>
+        <div class="feauters with-icon clearfix">
+          <div class="feauters-item">
+            <b class="feauters-name housing">Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="feauters-item with-logo">
-            <div class="feauters-item-icon">
-            </div>
-            <b>Еда</b>
+          <div class="feauters-item">
+            <b class="feauters-name food">Еда</b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="feauters-item with-logo">
-            <div class="feauters-item-icon">
-            </div>
-            <b>Сувениры</b>
+          <div class="feauters-item">
+            <b class="feauters-name souvenirs">Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div> 
-        <div class="feauters clearfix">
+        <div class="feauters with-photo clearfix">
           <div class="feauters-item photo">
             <img src="img/content-photo-2.jpg" width="800" height="256" alt="Sedona photo">
           </div>
           <div class="feauters-item">
-            <b class="feauters-name">Там есть мост дьявола</b>
-            <p>- №2 -</p>
-            <p>Да, по нему вы можете пройти! Если, конечно, вы осмелитесь!</p>
+            <b class="feauters-name"><span>Там есть</span><span>мост дьявола</span></b>
+            <p class="feauter-number">- №2 -</p>
+            <p><span>Да, по нему вы можете пройти!</span> Если конечно<span> вы осмелитесь!</span></p>
           </div>
         </div>
-        <div class="feauters clearfix">
+        <div class="feauters last clearfix">
           <div class="feauters-item">
             <b class="feauters-name">Небольшая площадь</b>
-            <p>- №3 -</p>
+            <p class="feauter-number">- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="feauters-item">
             <b class="feauters-name">Красивая дорога</b>
-            <p>- №4 -</p>
+            <p class="feauter-number">- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="feauters-item">
             <b class="feauters-name">Мало туристов</b>
-            <p>- №5 -</p>
+            <p class="feauter-number">- №5 -</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div> 
         </div>
-        <div class="feauters search">
+        <div class="search">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p><span>Укажите предполагаемые даты поездки,</span><span>и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
         </div>
         <div class="map">
-          <img src="img/map.jpg" width="1200" height="591" alt="Map of Sedona">
-        </div>
-        <div class="form">
-          <form class="appointment-form" action="#" method="post">
+          <img src="img/map.jpg" width="1200" height="473" alt="Map of Sedona">
+          <div class="form">
+          <form class="search-hotel" action="#" method="post">
             <p class="form-title">Поиск гостиницы в Седоне</p>
-            <fieldset class="form-element">
-              <label class="input-date">Дата заезда:
+            <div class="search-form">
+            <fieldset class="search-element">
+              <label class="date-label">Дата заезда:
+                <div class="input-date">
                 <input type="date" name="date-arrival">
+                </div>
               </label> 
-              <button class="btn" type="submit"></button>
+              <button class="btn calendar" type="submit"></button>
             </fieldset>  
-            <fieldset class="form-element">
-              <label class="input-date">Дата отъезда: 
+            <fieldset class="search-element">
+              <label class="date-label">Дата отъезда:<div class="input-date"> 
                 <input type="date" name="date-departure">
+                </div>
               </label>
-              <button class="btn" type="submit"></button>   
+              <button class="btn calendar" type="submit"></button>   
             </fieldset>
-            <fieldset class="form-element">
+            <fieldset class="search-element">
               <label class="input-amount">Взрослые:
                 <input type="number" name="adults-amount">
               </label>
@@ -127,7 +126,9 @@
               </label>
             </fieldset>   
             <a class="btn find" href="hotels.index">Найти</a>
+            </div>
           </form>
+        </div>
         </div>
       </main> 
       <footer class="main-footer clearfix">
@@ -142,7 +143,6 @@
         <div class="footer-block copyright">
           <p>WEBSITE BY:</p>
           <a class="btn" href="https://htmlacademy.ru">
-            <img src="img/htmlacademy-logo.png" width="113" height="39" alt="htmlacademy-logo">
           </a>
         </div>
       </footer>
