@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -15,37 +15,40 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
+            <li class="main-navigation-item">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="main-navigation-item">
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="main-navigation-item">
               <a href="#">Карта штата</a>
             </li>
-            <li>
-              <a href="#" class="active">Гостиницы</a>
+            <li class="main-navigation-item">
+              <a href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="promo-image">
-            <p class="promo-intro welcome"><img src="img/intro-1.png" width="188" height="45" alt="Welcome"></p>
-            <p class="promo-intro to-the-gorgeous"><img src="img/intro-2.png" width="256" height="30" alt="to the gorgeous"><p>   
-            <p class="promo-intro sedona"><img src="img/intro-3.png" width="458" height="78" alt="Sedona"></p>
-            <p class="promo-intro because"><img src="img/intro-4.png" width="296" height="80" alt="&laquo;Because the Grand Canyon sucks!&raquo;"></p>
-          </div>          
+          <img src="img/intro-1.png" class="promo-intro welcome" width="188" height="45" alt="Welcome">
+          <img src="img/intro-2.png" class="promo-intro to-the-gorgeous" width="256" height="30" alt="to the gorgeous">
+          <img src="img/intro-3.png" class="promo-intro sedona" width="458" height="78" alt="Sedona">
+          <img src="img/intro-4.png" class="promo-intro because" width="296" height="80" alt="&laquo;Because the Grand Canyon sucks!&raquo;">
+        </div>
         <div class="content-about">
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>   
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <h2>Седона — небольшой городок в Аризоне, заслуживающий большего</h2>   
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+            </p>
         </div>
         <div class="feauters with-photo clearfix">
           <div class="feauters-item">
-            <b class="feauters-name">Настоящий городок</b>
-            <p class="feauter-number">- №1 -</p>
-            <p><span>Седона - не аттракцион для туристов,</span><span>там течет своя жизнь</span></p>
+            <b class="feauters-title">Настоящий городок</b>
+            <p class="feauter-number">— №1 —</p>
+            <p>Седона — не аттракцион для туристов,<br>
+              там течет своя жизнь
+            </p>
           </div>
           <div class="feauters-item photo">
             <img src="img/content-photo-1.jpg" width="800" height="256" alt="Sedona photo">
@@ -53,15 +56,15 @@
         </div>
         <div class="feauters with-icon clearfix">
           <div class="feauters-item">
-            <b class="feauters-name housing">Жилье</b>
+            <h2 class="feauters-title housing">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feauters-item">
-            <b class="feauters-name food">Еда</b>
+            <h2 class="feauters-title food">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="feauters-item">
-            <b class="feauters-name souvenirs">Сувениры</b>
+            <h2 class="feauters-title souvenirs">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div> 
@@ -69,66 +72,70 @@
           <div class="feauters-item photo">
             <img src="img/content-photo-2.jpg" width="800" height="256" alt="Sedona photo">
           </div>
-          <div class="feauters-item">
-            <b class="feauters-name"><span>Там есть</span><span>мост дьявола</span></b>
-            <p class="feauter-number">- №2 -</p>
-            <p><span>Да, по нему вы можете пройти!</span> Если конечно<span> вы осмелитесь!</span></p>
+        <div class="feauters-item">
+          <b class="feauters-title">Там есть<br>
+          мост дьявола</b>
+          <p class="feauter-number">— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
           </div>
         </div>
         <div class="feauters last clearfix">
           <div class="feauters-item">
-            <b class="feauters-name">Небольшая площадь</b>
-            <p class="feauter-number">- №3 -</p>
+            <b class="feauters-title">Небольшая площадь</b>
+            <p class="feauter-number">— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="feauters-item">
-            <b class="feauters-name">Красивая дорога</b>
-            <p class="feauter-number">- №4 -</p>
+            <b class="feauters-title">Красивая дорога</b>
+            <p class="feauter-number">— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="feauters-item">
-            <b class="feauters-name">Мало туристов</b>
-            <p class="feauter-number">- №5 -</p>
+            <b class="feauters-title">Мало туристов</b>
+            <p class="feauter-number">— №5 —</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div> 
         </div>
         <div class="search">
-            <h2>Заинтересовались?</h2>
-            <p><span>Укажите предполагаемые даты поездки,</span><span>и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="map">
           <img src="img/map.jpg" width="1200" height="473" alt="Map of Sedona">
-          <div class="form">
-          <form class="search-hotel" action="#" method="post">
-            <p class="form-title">Поиск гостиницы в Седоне</p>
-            <div class="search-form">
-            <fieldset class="search-element">
-              <label class="date-label">Дата заезда:
-                <div class="input-date">
-                <input type="date" name="date-arrival">
-                </div>
-              </label> 
-              <button class="btn calendar" type="submit"></button>
-            </fieldset>  
-            <fieldset class="search-element">
-              <label class="date-label">Дата отъезда:<div class="input-date"> 
-                <input type="date" name="date-departure">
-                </div>
-              </label>
-              <button class="btn calendar" type="submit"></button>   
-            </fieldset>
-            <fieldset class="search-element">
-              <label class="input-amount">Взрослые:
-                <input type="number" name="adults-amount">
-              </label>
-              <label class="input-amount">Дети: 
-                <input type="number" name="children-amount">
-              </label>
-            </fieldset>   
-            <a class="btn find" href="hotels.index">Найти</a>
-            </div>
-          </form>
-        </div>
+          <div class="search-form">
+            <form class="search-hotel" action="#" method="post">
+              <a class="form-title" href="hotels.html">Поиск гостиницы в Седоне</a>
+              <div class="modal-form">
+                <fieldset class="search-element calendar">
+                  <label for="date-arrival-id" class="date-label">Дата заезда:</label> 
+                  <div class="input-date">
+                    <input type="date" name="date-arrival" id="date-arrival-id" value="2016-03-24">
+                  </div>
+                </fieldset>  
+                <fieldset class="search-element calendar">
+                  <label for="date-departure-id" class="date-label">Дата выезда:</label>
+                  <div class="input-date"> 
+                    <input type="date" name="date-departure" id="date-departure-id" value="2016-07-04">
+                  </div>  
+                </fieldset>
+                <fieldset class="search-element">
+                  <div class="search-element-item adults">
+                    <label for="adults-amount-id" class="input-amount">Взрослые:</label>
+                    <span class="minus">-</span>
+                    <input type="number" name="adults-amount" id="adults-amount-id" value="2">
+                    <span class="plus">+</span>
+                  </div>  
+                  <div class="search-element-item children">
+                    <label for="children-amount-id" class="input-amount">Дети:</label> 
+                    <span class="minus">-</span>
+                    <input type="number" name="children-amount" id="children-amount-id" value="0">
+                    <span class="plus">+</span>
+                  </div>
+                </fieldset>   
+                <input type="submit" name="find" class="btn find" value="Найти">
+              </div>
+            </form>
+          </div>
         </div>
       </main> 
       <footer class="main-footer clearfix">
@@ -142,8 +149,7 @@
         </div>
         <div class="footer-block copyright">
           <p>WEBSITE BY:</p>
-          <a class="btn" href="https://htmlacademy.ru">
-          </a>
+          <a class="btn" href="https://htmlacademy.ru"></a>
         </div>
       </footer>
     </div>
