@@ -6,9 +6,9 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    font-family: "PT Sans", "Arial", san-serif;
+    font-family: "PT Sans", "Arial";
     text-transform: uppercase;
-    background-color: #f2f2f2;
+    background: lightgrey;
 }
 
 .clearfix::after {
@@ -42,8 +42,8 @@ b {
 .container {
     width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0 0 20px 5px #dedede;
+    background: #ffffff;
+    box-shadow: 0 0 20px 5px grey;
 }  
 
 .main-header {
@@ -53,39 +53,37 @@ b {
 .main-navigation {
     min-height: 56px;
     margin: 0;
-    padding: 0;
+    padding: 0 72px;
 }
     
 .main-navigation ul {
     margin: 0;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding: 0;
     list-style: none;
     font-size: 0;
-    
 }    
 
-.main-navigation-item {
+.main-navigation li {
     display: inline-block;
-    width: 20%;
+    width: 240px;
     height: 56px;
     margin: 0;
+    padding: 0;
     line-height: 56px;
 }
 
-.main-navigation-item:first-child,
-.main-navigation-item:nth-child(2) {
+.main-navigation li:first-child,
+.main-navigation li:nth-child(2) {
     text-align: left;
 }
-
-
-.main-navigation-item:last-child,
-.main-navigation-item:nth-child(3){
+    
+.main-navigation li:last-child,
+.main-navigation li:nth-last-child(2){
     text-align: right;
 }
 
-.main-navigation-item:nth-child(3) {
-    margin-left: 20%;
+.main-navigation li:nth-child(3) {
+    margin-left: 96px;
 }
 
 .main-navigation a {
@@ -95,34 +93,6 @@ b {
     font-weight: bold;
     vertical-align: middle;
     color: #000000;
-}
-
-.main-navigation-item:nth-child(2) a {
-    padding-left: 15%;
-}
-
-.main-navigation-item:nth-child(3) a {
-    padding-right: 15%;
-}
-
-.main-navigation a:hover {
-    color: #bcd6e7;
-}
-
-.main-navigation a:active {
-    color: #b7b7b7;
-}
-
-.main-navigation a.active {
-    color: #766357;
-}
-
-.main-navigation a.active:hover {
-    color: #604e43;
-}
-
-.main-navigation a.active:active {
-    color: #d6d0cc;
 }
  
 .logo {
@@ -142,10 +112,8 @@ b {
     min-height: 510px;
     padding-top: 1px;
     text-align: center;
-    background:
-    url("../img/promo-background-mask.png") no-repeat 0 454px, 
-    url("../img/promo-background.jpg") no-repeat;
-}
+    background: lightblue url("../img/promo-background.jpg");
+    }
      
 .welcome {
     margin-top: 75px;
@@ -243,7 +211,7 @@ b {
     display: block;
     width: 80px;
     height: 80px;
-    background: transparent url("../img/sprite-icons.png") no-repeat;
+    background: url("../img/sprite-icons.png") no-repeat;
 }
 
 .feauters-name.housing::before {
@@ -270,7 +238,7 @@ b {
 }
 
 .feauters.last {
-    background-color: #eeeeee;
+    background-color: lightgrey;
 }
 
 .feauters.last .feauters-name {
@@ -334,15 +302,14 @@ b {
     height: 473px;
 }    
     
-.modal-form {
+.form {
     position: absolute;
     top: -86px;
     left: 50%;
     margin-left: -284px;
     width:568px;
     height: 482px;
-    color: #000000;
-    background-color: #ffffff;
+    background: #ffffff;
 }
 
 .search-hotel .form-title {
@@ -371,21 +338,7 @@ b {
     margin-bottom: 30px;
     text-align: left;
     line-height: 38px;
-}
-
-.search-element input {
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial", san-serif;
-}
-
-.date-label {
-    display: inline-block;
-    vertical-align: top;
-    width: 110px;
-    line-height: 38px;
+    vertical-align: middle;
 }
 
 .search-element input[type="date"] {
@@ -393,140 +346,21 @@ b {
     vertical-align: top;
     width: 345px;
     height: 38px;
-    margin-left: -3px;
-    background-color: #f2f2f2;
+    background:gray;
     border: none;
-}
-
-.search-element input[type="date"]:focus {
-    background: #ffffff;
-    border: -1px solid #ebebeb;
-    cursor: pointer;
-}
-
-.search-element input[type="date"]:hover {
-    background: #ebebeb;
-    cursor: pointer;
 }
 
 .input-date {
     display: inline-block;
-    vertical-align: top;
     text-align: right;
 }
 
-.search-element.calendar {
-    position: relative;
-}
-
-.search-element.calendar::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 24px;
-    height: 24px;
-    background: transparent url("../img/spritesheet.png") no-repeat -4px -65px;
-}
-
-.search-element.calendar:hover::after{
-    background-position: -4px -129px;
-    cursor: pointer;
-}
-
-.search-element.calendar:active::after{
-    background-position: -4px -97px;
-    cursor: pointer;
-}
-
-.search-element-item {
-    display: inline-block;
-    vertical-align: top;
-    height: 38px;
-    text-align: center;
-    font-size: 0;
-}
-
-.search-element-item.adults {
-    margin-right: 54px;
-}
-
-.search-element-item label {
-    width: 100px;
-    font-size: 14px;
-}
-
-.search-element-item:first-child label {
-    margin-right: 40px;
-}
-
-.search-element-item:last-child label {
-    margin-right: 25px;
-}
-
-.search-element-item span {
-    display: inline-block;
-    vertical-align: top;
-    width: 25px;
-    font-size: 21px;
-    font-weight: bold;
-    color: #a9a9a9;
-    background-color: #f2f2f2;
-}
-
-.search-element-item span:hover {
-    color: #000000;
-    cursor: pointer;
-}
-
-.search-element-item span:active {
-    color: #81b3d2;
-    cursor: pointer;
-}
-
-.search-element-item .minus {
-    text-align: right;
-}
-
-.search-element-item .plus {
-    text-align: left;
-}
-
-.search-element-item input[type="number"] {
-    display: inline-block;
-    vertical-align: top;
-    width: 62px;
-    height: 38px;
-    padding: 0;
-    text-align: center;
-    background-color: #f2f2f2;
-    border: none;
+.calendar {
+    display: none;
 }
 
 .btn.find {
-    display: block;
-    width: 458px;
-    height: 60px;
-    margin-top: 54px;
-    Font-size: 21px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 60px;
-    background-color: #81b3d2;
-}
-
-.btn.find:hover {
-    background-color: #669ec0;
-    
-}
-
-.btn.find:active {
-    color: #88b6d1;
-    background-color: #5496bd;
-    
+    background: #81b3d2;
 }
 
 .main-footer {
@@ -619,12 +453,10 @@ b {
     padding-right: 72px;
     padding-top: 1px;
     color: #ffffff;
-    background: lightblue url("../img/filter-promo-background.jpg") no-repeat;
-}
+    background: lightblue 
 
-fieldset {
-    border: none;
-}
+url("../img/filter-promo-background.jpg") no-repeat;
+}   
     
 .content-filter-item {
     float: left;
@@ -632,6 +464,7 @@ fieldset {
     min-height: 218px;
     margin: 0;
     padding: 0;
+    outline: 1px solid yellow;
 }
 
 .content-filter-item:last-child {
@@ -645,154 +478,21 @@ fieldset {
     font-weight: bold;
 }
 
-.filter-range .content-filter-title {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
 input[type="checkbox"] {
     display: none;
 }
 
 label.checkbox {
-    position: relative;
     display: block;
-    margin-right: 100px;
+    margin-left: 30px;
     margin-bottom: 20px;
-    padding-left: 30px;
     cursor: pointer;
+    
 }
-
-input[type="checkbox"] + .checkbox-indicator::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 25px;
-    height: 23px;
-    background: url("../img/spritesheet.png") no-repeat -4px -162px;
-}
-
-label.checkbox:hover input[type="checkbox"] + .checkbox-indicator::before {
-    background-position: -4px -162px;
-}
-
-input[type="checkbox"]:disabled + .checkbox-indicator::before {
-    background-position: -4px -258px;
-}
-
-input[type="checkbox"]:checked + .checkbox-indicator::before {
-    background-position: -4px -194px;
-}
-
-label.checkbox:hover input[type="checkbox"]:checked + .checkbox-indicator::before {
-    background-position: -4px -194px;
-}
-
-input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
-    background-position: -4px -225px;
-}
-
-.price-input {
-    position: relative;
-    height: 36px;
-    margin-bottom: 20px;
-    font-size: 0;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-}
-
-.price-input::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    height: 22px;
-    background: #ffffff;
-    transform: translate(-50%, -50%);
-}
-
-.price-input label {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
-    cursor: pointer;
-}
-
-.price-input .min-price,
-.price-input .max-price {
-    width: 90px;
-    padding-left: 65px;
-}
-
-.price-input input {
-    width: 50px;
-    margin: 0;
-    color: inherit;
-    font: inherit;
-    background: none;
+    
+fieldset {
     border: none;
-}
-
-.range-controls {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.range-controls .scale {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.range-controls .bar {
-    width: 80%;
-    height: 2px;
-    background-color: #ffffff;
-}
-
-.range-toggle {
-    position: absolute;
-    top: -9px;
-    width: 4px;
-    height: 4px;
-    background-color: #ababab;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-}
-
-.range-toggle-min {
-    left: 0;
-}
-
-.range-toggle-max {
-    left: 80%;
-}
-
-.range-toggle:hover {
-  background-color: #1c4f80;
-}
-
-.btn-transparent {
-    display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.btn-transparent:hover {
-    color: #000000;
-    background-color: #ffffff;
-}
+}    
     
 .sort-results {
     min-height: 86px;
@@ -819,7 +519,6 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
 .sort-results-item li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 30px;
 }
 
 .sort-results-item.title {
@@ -828,63 +527,10 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
     vertical-align: middle;
     line-height: 86px;
 }
-
-.sort-results-item .sorting {
-    color: #b2b2b2;
-    text-decoration: none;
-    border-bottom: 1px dotted #81b3d2;
-}
-
-.sorting.active {
-    color: #81b3d2;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.sort-results-item .sorting:hover {
-    color: #81b3d2;
-}
-
-.sort-results-item .sorting:active {
-    color: #000000;
-    border-bottom: none;
-}
     
 span.sort-results-item {
     margin-right: 40px;
-
 } 
-
-.sort-results-item .arrow {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    min-width: 15px;
-    min-height: 15px;
-    margin-left: 5px;
-}
-
-.sort-results-item .arrow::before {
-    content: "";
-    position: absolute;
-    left: 3px; bottom: 0px; 
-    border: 6px solid transparent; 
-    border-top: 10px solid #cccccc;
-}
-
-.sort-results-item .arrow.active::before {
-    border-top-color: #e7e7e7;
-}
-
-.sort-results-item .arrow:hover::before {
-    border-top-color: #000000;
-}
-
-.sort-results-item .arrow-down::before {
-    bottom: 5px;
-    transform: rotate(180deg);
-    
-}
 
 .hotels {
     padding-right: 72px;
@@ -915,21 +561,10 @@ span.sort-results-item {
 }
 
 .hotel-title {
-    display: block;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 5px;
     padding: 0;
-    color: #000000;
-    text-decoration: none;
-}
-
-.hotel-title:hover {
-    color: lightblue;
-}
-
-.hotel-title:active {
-    color: lightgrey;
+    margin-bottom: 5px;
 }
 
 .hotel-about-column {
@@ -959,41 +594,15 @@ span.sort-results-item {
     background-color: #81b3d2;
 }
 
-.hotel-about-btn.more:hover {
-    background-color: #669ec0;
-}
-
-.hotel-about-btn.more:active {
-    color: #88b6d1;
-    background-color: #5496bd;
-}
-
-.hotel-about-btn.more a:active,
-.hotel-about-btn.booking a:active {
-    opacity: 0.3;
-}
-
 .hotel-about-btn.booking {
     width: 142px;
     background-color: #766357;
 }
 
-.hotel-about-btn.booking:hover {
-    background-color: #604e43;
-}
-
-.hotel-about-btn.booking:active {
-    color: #857871;
-    background-color: #503e33;
-}
-
 .rating-number {
-    width: 110px;
     margin-top: 44px;
-    padding: 2px 0;
-    text-align: center;
-    background-color: #f2f2f2;
-    color: #828282;
+    padding: 2px 10px;
+    background: lightgrey;
 }
 
 .rating-stars {
