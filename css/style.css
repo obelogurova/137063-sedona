@@ -319,6 +319,7 @@ b {
     
     width: 1200px;
     min-height: 473px;
+    margin-bottom: 6px;
     
     line-height: 0;
     
@@ -599,7 +600,7 @@ input[type="date"]::-ms-clear {
     display: block;
     width: 458px;
     min-height: 58px;
-    margin-top: 54px;
+    margin-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -1171,7 +1172,7 @@ span.sort-results-item {
     font-size: 26px;
     vertical-align: top;
 }
-
+ы
 .rating-stars span:before{
     content: "";
     
