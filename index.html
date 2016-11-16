@@ -72,11 +72,11 @@
           <div class="feauters-item photo">
             <img src="img/content-photo-2.jpg" width="800" height="256" alt="Sedona photo">
           </div>
-        <div class="feauters-item">
-          <b class="feauters-title">Там есть<br>
-          мост дьявола</b>
-          <p class="feauter-number">— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
+          <div class="feauters-item">
+            <b class="feauters-title">Там есть
+            мост дьявола</b>
+            <p class="feauter-number">— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
           </div>
         </div>
         <div class="feauters last clearfix">
@@ -103,11 +103,11 @@
         <div class="map">
           <img src="img/map.jpg" width="1200" height="473" alt="Map of Sedona">
           <div class="search-form">
-            <form class="search-hotel" action="#" method="post">
-              <a class="form-title" href="hotels.html">Поиск гостиницы в Седоне</a>
-              <div class="modal-form">
+            <a class="modal-form-title" href="form.html">Поиск гостиницы в Седоне</a>
+            <div class="modal-form-wrapper">
+              <form class="modal-form" action="#" method="post">
                 <fieldset class="search-element calendar">
-                  <label for="date-arrival-id" class="date-label">Дата заезда:</label> 
+                  <label for="date-arrival-id" class="date-label">Дата заезда:</label>
                   <div class="input-date">
                     <input type="date" name="date-arrival" id="date-arrival-id" value="2016-03-24">
                   </div>
@@ -133,9 +133,10 @@
                   </div>
                 </fieldset>   
                 <input type="submit" name="find" class="btn find" value="Найти">
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
+          <iframe class="sedona-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d837618.9434987187!2d-112.1449866!3d34.9077294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479323661972" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </main> 
       <footer class="main-footer clearfix">
@@ -153,5 +154,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
