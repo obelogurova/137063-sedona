@@ -134,7 +134,7 @@ b {
     
     background:
     url("../img/promo-background-mask.png") no-repeat 0 454px, 
-    url("../img/promo-background.jpg") no-repeat;
+    #d5e6f0 url("../img/promo-background.jpg") no-repeat;
 }
 
 .promo-image img {
@@ -322,8 +322,6 @@ b {
     margin-bottom: 6px;
     
     line-height: 0;
-    
-    background: lightgreen;
 } 
 
 iframe.sedona-map {
@@ -1172,7 +1170,7 @@ span.sort-results-item {
     font-size: 26px;
     vertical-align: top;
 }
-ы
+
 .rating-stars span:before{
     content: "";
     
